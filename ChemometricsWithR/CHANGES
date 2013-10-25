@@ -1,0 +1,12 @@
+Version 0.1.7
+- ChemometricsWithR no longer uses "Depends" for all
+  packages that are mentioned in the book, but rather "Suggests" these
+  other packages. This means that installation of ChemometricsWithR will
+  not automatically imply installation of the others. Examples in the
+  manual pages will now check the presence of the other packages and if
+  a particular package is not found, an appropriate message will be
+  printed to the screen. In addition, several datasets from other R
+  packages have been included in the ChemometricsWithRData package so
+  that unnecessary loading of packages (only for the data) is avoided.
+- sd(matrix) has been replaced by apply(matrix, 2, sd) in the
+  chapter3, chapter7 and chapter11 demos

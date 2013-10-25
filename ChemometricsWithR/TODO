@@ -1,0 +1,3 @@
+Documentation for opa and efa is a bit confusing: one gives pure
+variables in row space, other in column space. We should either make
+this more clear in the man page text or present clear examples.
