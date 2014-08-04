@@ -1,3 +1,9 @@
+Version 0.1.8
+- updated maintainers' email address
+- fixed NAMESPACE issues for packages MASS and pls
+- added year to book citation
+
+
 Version 0.1.7
 - ChemometricsWithR no longer uses "Depends" for all
   packages that are mentioned in the book, but rather "Suggests" these

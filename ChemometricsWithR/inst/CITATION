@@ -9,15 +9,14 @@ citHeader("To cite package 'ChemometricsWithR in publications use:")
      citEntry(entry="Book",
               title = "Chemometrics With R: Multivariate Data Analysis
               in the Natural Sciences and Life Sciences",
-              author = personList(as.person("Ron Wehrens Pinheiro")),
-              year = year,
+              author = personList(as.person("Ron Wehrens")),
+              year = "2011",
 	      publisher = "Springer",
 	      address = "Heidelberg",
 	      doi = "10.1007/978-3-642-17841-2",
 
               textVersion =
-              paste("Ron Wehrens (",
-                    year,
-                    "). Chemometrics With R: Multivariate Data Analysis ",
+              paste("Ron Wehrens (2011). ",
+                    "Chemometrics With R: Multivariate Data Analysis ", 
                     "in the Natural Sciences and Life Sciences. ",
                     "Springer, Heidelberg.", sep=""))

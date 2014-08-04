@@ -1,5 +1,5 @@
 ## SA functions
-require(MASS)
+## require(MASS)
 SAstep <- function(curr.set, maxvar, 
                    fraction = .3, size.dev = 1) 
 {
