@@ -77,7 +77,9 @@ project <- function(object, npc = maxpc, newdata, ldngs)
   newdata %*% ldngs[, 1:npc]
 }
 
-## generic functions... 
+## generic functions
+scores <- function(object, ...) UseMethod("scores")
+loadings <- function(object, ...) UseMethod("loadings")
 scoreplot <- function(object, ...) UseMethod("scoreplot")
 loadingplot <- function(object, ...) UseMethod("loadingplot")
 
@@ -202,7 +204,7 @@ loadingplot.PCA <- function(object, pc = c(1,2),
   }
 
   nonzeros <- apply(pcloadings[,pc], 1,
-                    function(x) sum(x^2) > min.length)
+                    function(object) sum(object^2) > min.length)
   if (length(col) == 1)
     col <- rep(col, nrow(pcloadings))
 

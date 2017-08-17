@@ -1,12 +1,22 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
+## Import all packages listed as Imports or Depends
+importFrom("pls", "MSEP", "plsr")
+importFrom("kohonen", "classvec2classmat", "classmat2classvec")
+importFrom("devtools", "install_github")
+importFrom("MASS", "lda", "ginv")
 
-# Export all names
+## import from default packages
+importFrom("graphics", "abline", "arrows", "axis", "barplot", "box",
+           "par", "plot", "points", "text")
+importFrom("stats", "embed", "quantile", "runif", "loadings", "biplot")
+
+## export functions and generics defined in ChemometricsWithR
 exportPattern("PCA", "variances", "screeplot", "reconstruct", "project",
               "efa", "opa", "mcr", "SAstep", "SAfun", "SAfun2",
               "GA.init.pop", "GA.select", "GA.XO", "GA.mut", "GAfun",
               "GAfun2", "lda.loofun", "pls.cvfun", "AdjRkl", "rms",
-              "err.rate", "gini", "pick.peaks")
+              "err.rate", "gini", "pick.peaks",
+              "scoreplot", "loadingplot", "loadings", 
+              "installChemometricsWithRData")
 S3method("biplot", "PCA")
 S3method("loadingplot", "PCA")
 S3method("scoreplot", "PCA")
@@ -14,11 +24,3 @@ S3method("loadings", "PCA")
 S3method("scores", "PCA")
 S3method("summary", "PCA")
 
-# Import all packages listed as Imports or Depends
-import(pls, MASS, ChemometricsWithRData)
-importFrom("kohonen", "classvec2classmat", "classmat2classvec")
-
-## import from default packages
-importFrom("graphics", "abline", "arrows", "axis", "barplot", "box",
-           "par", "plot", "points", "text")
-importFrom("stats", "embed", "quantile", "runif")

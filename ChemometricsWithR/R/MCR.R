@@ -27,7 +27,7 @@ opa <- function(x, ncomp)
     newX <- x[selected[i],]
 
     if (i == 1) {
-      Xref <- newX / sqrt(crossprod(newX))
+      Xref <- newX / sqrt(sum(crossprod(newX)))
     } else {
       Xref <- rbind(Xref, newX / sqrt(sum(crossprod(newX))))
     }

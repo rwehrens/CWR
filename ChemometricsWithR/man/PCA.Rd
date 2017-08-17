@@ -1,5 +1,7 @@
 \name{PCA}
 \alias{PCA}
+\alias{scores}
+\alias{loadings}
 \alias{scores.PCA}
 \alias{loadings.PCA}
 \alias{variances}
@@ -70,7 +72,7 @@ project(object, npc = maxpc, newdata, ldngs)
 }
 \seealso{\code{\link{plot.PCA}}}
 \examples{
-data(wines, package = "ChemometricsWithRData")
+data(wines, package = "kohonen")
 wines.PC <- PCA(scale(wines))
 }
 \keyword{multivariate}

@@ -21,14 +21,14 @@
             xlab, ylab, xlim, ylim, col = "blue", min.length =
             0.01, varnames = NULL, \dots)
 \method{biplot}{PCA}(x, pc = c(1,2),
-       show.names = c("none", "scores", "loadings", "both"),
-       score.col = 1, loading.col = "blue",
-       min.length = .01, varnames = NULL, \dots)
+        show.names = c("none", "scores", "loadings", "both"),
+        score.col = 1, loading.col = "blue",
+        min.length = .01, varnames = NULL, \dots)
 screeplot(object, type = c("scree", "percentage"), npc, \dots)
 }
 
 \arguments{
-  \item{object, x}{an object of class "PCA" (see below).}
+  \item{x, object}{an object of class "PCA" (see below).}
   \item{pc}{which PCs to show.}
   \item{pcscores}{matrix of scores, by default the scores of the PCA
   model object.}
@@ -66,8 +66,9 @@ screeplot(object, type = c("scree", "percentage"), npc, \dots)
 }
 \seealso{\code{\link{PCA}}}
 \examples{
-data(wines, package = "ChemometricsWithRData")
+data(wines, package = "kohonen")
 wines.PC <- PCA(scale(wines))
+wine.classes <- as.integer(vintages)
 scoreplot(wines.PC, col = wine.classes, pch = wine.classes)
 loadingplot(wines.PC, show.names = TRUE)
 biplot(wines.PC, score.col = wine.classes)
