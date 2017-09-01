@@ -1,13 +1,13 @@
 Package: ChemometricsWithR
 Type: Package
 Title: Chemometrics with R - Multivariate Data Analysis in the Natural Sciences and Life Sciences
-Version: 0.1.10
+Version: 0.1.11
 Author: Ron Wehrens
 Maintainer: Ron Wehrens <ron.wehrens@gmail.com>
-Description: Functions and scripts used in the book "Chemometrics with R - Multivariate Data Analysis in the Natural Sciences and Life Sciences" by Ron Wehrens, Springer (2011). 
+Description: Functions and scripts used in the book "Chemometrics with R - Multivariate Data Analysis in the Natural Sciences and Life Sciences" by Ron Wehrens, Springer (2011). Data used in the package are available from github.
 URL: https://github.com/rwehrens/CWR
 BugReports: https://github.com/rwehrens/CWR/issues
 Imports: MASS, pls, kohonen, devtools
-Suggests: nnet, randomForest, ada, rrcov, sfsmisc, ipred, fastICA, rda, TIMP, class, e1071, rpart, cluster, ALS, ptw, dtw, boot, leaps, lars, elasticnet, subselect, signal, mclust, ChemometricsWithRData (>= 0.1.4)
+Suggests: nnet, randomForest, ada, rrcov, sfsmisc, ipred, fastICA, rda, TIMP, class, e1071, rpart, cluster, ALS, ptw, dtw, boot, leaps, lars, elasticnet, subselect, signal, mclust
 License: GPL (>= 2)
 LazyLoad: yes

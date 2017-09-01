@@ -65,6 +65,7 @@ methods to provide initial guesses.
   Natural Sciences and Life Sciences". Springer, Heidelberg, 2011.
 }
 \examples{
+\dontrun{
 if (require("ChemometricsWithRData")) {
   data(bdata, package = "ChemometricsWithRData")
   D1.efa <- efa(bdata$d1, 3)
@@ -79,5 +80,6 @@ if (require("ChemometricsWithRData")) {
   matplot(D1.mcr.efa$C, type = "l", main = "Concentration profiles")
   matplot(t(D1.mcr.efa$S), type = "l", main = "Pure spectra")
   }
+}
 }
 \keyword{manip}
