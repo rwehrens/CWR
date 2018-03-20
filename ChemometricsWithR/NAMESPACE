@@ -1,5 +1,5 @@
 ## Import all packages listed as Imports or Depends
-importFrom("pls", "MSEP", "plsr")
+importFrom("pls", "MSEP", "plsr", "scores")
 importFrom("kohonen", "classvec2classmat", "classmat2classvec")
 importFrom("devtools", "install_github")
 importFrom("MASS", "lda", "ginv")
@@ -14,7 +14,7 @@ exportPattern("PCA", "variances", "screeplot", "reconstruct", "project",
               "efa", "opa", "mcr", "SAstep", "SAfun", "SAfun2",
               "GA.init.pop", "GA.select", "GA.XO", "GA.mut", "GAfun",
               "GAfun2", "lda.loofun", "pls.cvfun", "AdjRkl", "rms",
-              "err.rate", "gini", "pick.peaks",
+              "err.rate", "gini", "pick.peaks", "scores",
               "scoreplot", "loadingplot", "loadings", 
               "installChemometricsWithRData")
 S3method("biplot", "PCA")
