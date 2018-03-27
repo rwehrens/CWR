@@ -1,8 +1,16 @@
+Version 0.1.13
+- added scores to the list of imported (from pls) and exported
+  functions so that the original behaviour was restored (thanks to
+  Sergio Oller)
+
+Version 0.1.12
+- removed ChemometricsWithRData as a dependency, the package is no
+longer on CRAN but still accessible through github
+
 Version 0.1.8
 - updated maintainers' email address
 - fixed NAMESPACE issues for packages MASS and pls
 - added year to book citation
-
 
 Version 0.1.7
 - ChemometricsWithR no longer uses "Depends" for all
