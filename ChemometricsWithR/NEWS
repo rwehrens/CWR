@@ -2,6 +2,7 @@ Version 0.1.13
 - added scores to the list of imported (from pls) and exported
   functions so that the original behaviour was restored (thanks to
   Sergio Oller)
+- fixed a bug in the efa function (thanks to Ambarish Nag)
 
 Version 0.1.12
 - removed ChemometricsWithRData as a dependency, the package is no

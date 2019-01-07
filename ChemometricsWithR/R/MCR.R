@@ -2,9 +2,9 @@ efa <- function(x, ncomp)
 {
   nx <- nrow(x)
   Tos <- Fros <- matrix(0, nx, ncomp)
-  for (i in 3:nx)
+  for (i in ncomp:nx)
     Tos[i,] <- svd(scale(x[1:i,], scale = FALSE))$d[1:ncomp]
-  for (i in (nx-2):1)
+  for (i in (nx-ncomp+1):1)
     Fros[i,] <- svd(scale(x[i:nx,], scale = FALSE))$d[1:ncomp]
 
   Combos <- array(c(Tos, Fros[,ncomp:1]), c(nx, ncomp, 2))
