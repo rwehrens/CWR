@@ -1,7 +1,7 @@
 Package: ChemometricsWithR
 Type: Package
 Title: Chemometrics with R - Multivariate Data Analysis in the Natural Sciences and Life Sciences
-Version: 0.1.12
+Version: 0.1.13
 Author: Ron Wehrens
 Maintainer: Ron Wehrens <ron.wehrens@gmail.com>
 Description: Functions and scripts used in the book "Chemometrics with R - Multivariate Data Analysis in the Natural Sciences and Life Sciences" by Ron Wehrens, Springer (2011). Data used in the package are available from github.
