@@ -2,6 +2,6 @@
 
 
 R package, as well as a data package, to support the first edition of
-"Chemometrics With R", Springer (2011). The upcoming second edition
-will have it's own git repo.
+"Chemometrics With R", Springer (2011). The second edition
+has it's own git repo: https://github.com/rwehrens/ChemometricsWithR.
 
